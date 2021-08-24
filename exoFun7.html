@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>ExoFun7</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var number1 = parseInt(prompt("Veuillez saisir le nombre 1"));
+            var number2 = parseInt(prompt("Veuillez saisir le nombre 2"));
+            
+            var  division = (nb1, nb2) => { // Fonction Fléchée
+                var str = nb1/nb2;
+                return str;
+            }
+            alert ("Resultat de devision des 2 Nombres : " +division (number1,number2)); 
+            alert ("L’entier le plus proche de la division est : " +Math.round(division (number1,number2))); 
+            alert ("L’entier supérieur de la division est : " +Math.ceil(division (number1,number2))); 
+            alert ("L’entier inférieur de la division est : " +Math.floor(division (number1,number2))); 
+            alert ("Resulat avec Deux décimales de la division est : " +(division (number1,number2).toFixed(2))); 
+        </script>
+    </body>
+</html>

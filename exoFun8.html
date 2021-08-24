@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>ExoFun6</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var number1 = parseInt(prompt("Veuillez saisir le nombre 1"));
+            var number2 = parseInt(prompt("Veuillez saisir le nombre 2"));
+            
+            var Annonyme = function (nb1, nb2) { //Fonction Annonyme
+                var str = nb1/nb2;
+                return str;
+            }
+            alert ("Resultat de devision des 2 Nombres : " +Annonyme(number1,number2)); 
+            alert ("L’entier le plus proche de la division est : " +Math.round(Annonyme(number1,number2))); 
+            alert ("L’entier supérieur de la division est : " +Math.ceil(Annonyme(number1,number2))); 
+            alert ("L’entier inférieur de la division est : " +Math.floor(Annonyme(number1,number2))); 
+            alert ("Resulat avec Deux décimales de la division est : " +(Annonyme(number1,number2).toFixed(2))); 
+        </script>
+    </body>
+</html>

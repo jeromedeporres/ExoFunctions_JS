@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>ExoFun5</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function exo02() {
+                x=1; // valeur fixe de X est toujours 1.
+                while (x<=10) { // Boucle tourne maximum de 10 fois.
+                    if (x==7) { //Boucle change quand il arrive a 7eme fois et commence a diviser par 0, et continue jusqu'a 10eme fois.
+                        document.write("Division par 0 <br>");
+                        x++;
+                        continue;
+                    }
+                    a = 1/(x-7); //si il est entrée dans le 1er condition, le a 1/(x-7)
+                    document.write("Division par " + (x-7) + " = " + a.toFixed(2) + "<br>");
+                    x++;
+                }
+            }
+            exo02();
+        </script>
+    </body>
+</html>
